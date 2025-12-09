@@ -13,25 +13,24 @@ ul { list-style: none; }
     100% { background-position: 100% 50%; }
 }
 
-/* HEADER */
+/* HEADER - Merah */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%); /* Background merah gradien */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(211, 47, 47, 0.2); /* Shadow merah */
-    border-bottom: 3px solid #d32f2f; /* Border merah */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap */
+    border-bottom: 3px solid #fff; /* Border putih untuk kontras */
 }
 
 .logo img {
     height: 50px;
-    border: 2px solid #d32f2f; /* Border merah di logo */
+    border: 2px solid #fff; /* Border putih di logo untuk kontras */
     border-radius: 5px;
 }
 
@@ -43,11 +42,12 @@ nav ul {
 nav a { 
     font-weight: 500; 
     position: relative; 
+    color: #fff; /* Teks putih */
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #d32f2f;
+    color: #ffebee; /* Hover merah muda */
 }
 
 nav a::after {
@@ -57,7 +57,7 @@ nav a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background: #d32f2f;
+    background: #fff; /* Underline putih */
     transition: width 0.3s;
 }
 
@@ -69,10 +69,10 @@ nav a:hover::after {
     display: none;
     font-size: 1.7rem;
     cursor: pointer;
-    color: #d32f2f;
+    color: #fff; /* Menu toggle putih */
 }
 
-/* HERO CLEAN (PUTIH) */
+/* HERO - Sekarang Putih Bersih */
 .hero {
     height: 85vh;
     display: flex;
@@ -81,7 +81,7 @@ nav a:hover::after {
     align-items: center;
     text-align: center;
     padding-top: 5rem;
-    background: linear-gradient(135deg, #fff 0%, #d32f2f 50%, #fff 100%); /* Gradien merah-putih */
+    background: #ffffff; /* Background putih bersih */
     position: relative;
     overflow: hidden;
 }
@@ -122,19 +122,6 @@ nav a:hover::after {
     font-size: 1.3rem;
     opacity: 0.8;
     color: #333;
-}
-
-.hero-icons {
-    margin-top: 2rem;
-    font-size: 2rem;
-    display: flex;
-    gap: 1rem;
-    animation: fadeInUp 3s ease-in;
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 /* SECTIONS */
@@ -335,5 +322,7 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    nav ul { display: none; flex-direction: column; background: #fff; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-top: 2px solid #d32f2f; }
-    nav ul.active { display
+    nav ul { display: none; flex-direction: column; background: #d32f2f; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; border-top: 2px solid #fff; }
+    nav ul.active { display: flex; }
+    .about-content, .contact-content { grid-template-columns: 1fr; }
+}
