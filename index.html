@@ -26,58 +26,53 @@
     <div class="menu-toggle" id="menu-toggle">☰</div>
 </header>
 
-<section id="hero" class="hero">
-    <div class="hero-content">
-        <img src="S.png" alt="RedBull Tech Logo">
-        <h1>RedBull Tech</h1>
-        <p>Strength Technology, Brave Innovation</p>
-    </div>
+<section class="hero" id="hero">
+    <img src="S.png" alt="logo">
+    <h1>RedBull Tech</h1>
+    <p>Strength Technology, Brave Innovation</p>
 </section>
 
-<section id="about" class="about">
-    <h2 class="section-title">Tentang Perusahaan</h2>
+<section id="about">
+    <h2 class="section-title">Tentang Kami</h2>
     <div class="about-content">
         <div>
             <h3>Misi</h3>
-            <p>Menyediakan solusi teknologi inovatif untuk pertumbuhan bisnis klien.</p>
+            <p>Menyediakan solusi teknologi inovatif untuk mendukung pertumbuhan dan inovasi bisnis.</p>
             <h3>Visi</h3>
-            <p>Menjadi pemimpin global dalam konsultan teknologi.</p>
+            <p>Menjadi perusahaan konsultan teknologi paling berpengaruh di Asia.</p>
         </div>
         <div>
-            <h3>Fokus Layanan</h3>
-            <p>Konsultasi teknologi, pengembangan sistem, AI, dan digital solution.</p>
+            <h3>Fokus Utama</h3>
+            <p>Pengembangan sistem, integrasi software, AI & otomasi, dan solusi digital modern.</p>
         </div>
     </div>
 </section>
 
-<section id="services" class="services">
-    <h2 class="section-title">Layanan Perusahaan</h2>
+<section id="services">
+    <h2 class="section-title">Layanan</h2>
     <div class="services-grid">
-        <div class="service-card"><h4>Konsultasi Teknologi</h4><p>Analisis strategis infrastruktur.</p></div>
-        <div class="service-card"><h4>Pengembangan Sistem</h4><p>Sistem skalabel & aman.</p></div>
-        <div class="service-card"><h4>Integrasi Software</h4><p>Konektivitas antar platform.</p></div>
-        <div class="service-card"><h4>Business Intelligence</h4><p>Analytics untuk keputusan lebih baik.</p></div>
-        <div class="service-card"><h4>AI & Otomasi</h4><p>Implementasi AI untuk efisiensi.</p></div>
+        <div class="service-card"><h4>Konsultasi Teknologi</h4><p>Perencanaan strategi sistem & digital.</p></div>
+        <div class="service-card"><h4>Pengembangan Software</h4><p>Website, aplikasi, ERP, dan sistem custom.</p></div>
+        <div class="service-card"><h4>Integrasi API</h4><p>Menghubungkan platform & software.</p></div>
+        <div class="service-card"><h4>AI & Otomasi</h4><p>Implementasi AI untuk efisiensi bisnis.</p></div>
     </div>
 </section>
 
-<section id="team" class="team">
-    <h2 class="section-title">Struktur Organisasi</h2>
+<section id="team">
+    <h2 class="section-title">Tim Inti</h2>
     <div class="team-grid">
         <div class="team-member">
-            <img src="S.png" alt="Foto Direktur">
+            <img src="S.png" alt="">
             <h4>Arkan Putra Kurniawan</h4>
-            <p>Direktur</p>
-            <p>Bandung, 27 November 2004</p>
-            <p>081223161100</p>
+            <p>Direktur Utama</p>
+            <p>+62 811-8000-541</p>
             <p>Pendidikan: S2 MIT</p>
         </div>
         <div class="team-member">
-            <img src="S.png" alt="Foto Wakil Direktur">
+            <img src="S.png" alt="">
             <h4>Muhammad Fadhil Adika</h4>
             <p>Wakil Direktur</p>
-            <p>Pekanbaru, 29 Mei 2005</p>
-            <p>082289625612</p>
+            <p>0822-8962-5612</p>
             <p>Pendidikan: S2 Cambridge</p>
         </div>
     </div>
@@ -101,25 +96,25 @@
     </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="contact">
     <h2 class="section-title">Kontak</h2>
     <div class="contact-content">
         <form class="contact-form" id="contactForm">
             <input type="text" placeholder="Nama" required>
             <input type="email" placeholder="Email" required>
-            <textarea placeholder="Pesan" rows="5" required></textarea>
-            <button type="submit">Kirim Pesan</button>
+            <textarea rows="5" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim</button>
         </form>
         <div>
             <p><strong>Email:</strong> contact@redbulltech.com</p>
-            <p><strong>Alamat:</strong> Jl. Teknologi No. 123, Jakarta</p>
             <p><strong>Telepon:</strong> +62 811-8000-541</p>
+            <p><strong>Alamat:</strong> Jl. Teknologi No. 123, Jakarta</p>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2023 RedBull Tech.</p>
+    <p>&copy; 2025 RedBull Tech</p>
 </footer>
 
 <script>
@@ -138,9 +133,9 @@
         });
     });
 
-    document.getElementById('contactForm').addEventListener('submit', e => {
+    document.getElementById("contactForm").addEventListener("submit", (e)=>{
         e.preventDefault();
-        alert('Terima kasih! Pesan Anda telah dikirim.');
+        alert("Terima kasih! Pesan Anda telah dikirim.");
     });
 
     // Animasi fade-in saat scroll
